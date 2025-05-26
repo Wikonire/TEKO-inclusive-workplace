@@ -1,0 +1,872 @@
+[
+    {
+        "id": "e1a1f4d4.9f5f28",
+        "type": "tab",
+        "label": "Inklusiver Workplace",
+        "disabled": false,
+        "info": "Simulierter Flow zur Messung von Lärm, Temperatur, Licht und CO₂"
+    },
+    {
+        "id": "414c0314351c1c23",
+        "type": "tab",
+        "label": "ADS Tags Aufgabe 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2b88d79046ab6974",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "45d2a5fe1d874696",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e94e2d796d386b19",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7c7e4c08ca8b8b70",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "45d2a5fe1d874696",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b1df2c5529ce7c0b",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "45d2a5fe1d874696",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a6a339d8ecf72cc",
+        "type": "mqtt-broker",
+        "name": "Mosquitton test broker",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3168865632d15a19",
+        "type": "ads-connection",
+        "host": "192.168.178.73",
+        "clientIP": "",
+        "amsNetIdTarget": "192.168.178.73.1.1",
+        "amsNetIdSource": "192.168.178.74.1.1",
+        "port": 48898,
+        "amsPortSource": 32905,
+        "amsPortTarget": "851",
+        "adsTimeout": 500
+    },
+    {
+        "id": "d30d13157620682d",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://10.0.2.15:8086",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "temp_simulator",
+        "type": "inject",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Temp. Simulation (5s)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "temp_function"
+            ]
+        ]
+    },
+    {
+        "id": "temp_function",
+        "type": "function",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Simuliere Temp.",
+        "func": "msg.payload = (20 + Math.random() * 5).toFixed(2);\nmsg.topic = \"sensor/temperatur\";\nreturn msg;",
+        "outputs": 1,
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "mqtt_out",
+                "temp_ui"
+            ]
+        ]
+    },
+    {
+        "id": "noise_simulator",
+        "type": "inject",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Lärm Simulation (5s)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "noise_function"
+            ]
+        ]
+    },
+    {
+        "id": "noise_function",
+        "type": "function",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Simuliere Lärm",
+        "func": "msg.payload = (40 + Math.random() * 30).toFixed(2);\nmsg.topic = \"sensor/noise\";\nreturn msg;",
+        "outputs": 1,
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "mqtt_out",
+                "noise_ui"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out",
+        "type": "mqtt out",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "MQTT Publish",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2b88d79046ab6974",
+        "x": 680,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "temp_ui",
+        "type": "ui_gauge",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Temperatur",
+        "group": "7c7e4c08ca8b8b70",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Raumtemperatur",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 15,
+        "max": 30,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "noise_ui",
+        "type": "ui_gauge",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Lärmpegel",
+        "group": "b1df2c5529ce7c0b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Lärmpegel",
+        "label": "dB",
+        "format": "{{value}}",
+        "min": 30,
+        "max": 80,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 670,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "738cba7606e382f4",
+        "type": "inject",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Temp. Simulation (5s)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "3b379605c58f2bcb"
+            ]
+        ]
+    },
+    {
+        "id": "3b379605c58f2bcb",
+        "type": "function",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Simuliere Temp.",
+        "func": "msg.payload = (20 + Math.random() * 5).toFixed(2);\nmsg.topic = \"sensor/temperatur\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "69dd99d67e8c2042"
+            ]
+        ]
+    },
+    {
+        "id": "1d390c449f54ed0a",
+        "type": "inject",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Lärm Simulation (5s)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "72700eb202133cb0"
+            ]
+        ]
+    },
+    {
+        "id": "72700eb202133cb0",
+        "type": "function",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "Simuliere Lärm",
+        "func": "msg.payload = (40 + Math.random() * 30).toFixed(2);\nmsg.topic = \"sensor/noise\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 460,
+        "wires": [
+            [
+                "69dd99d67e8c2042"
+            ]
+        ]
+    },
+    {
+        "id": "69dd99d67e8c2042",
+        "type": "mqtt out",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "MQTT Publish",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1a6a339d8ecf72cc",
+        "x": 640,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b843883f2d1d15b5",
+        "type": "debug",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "print temperature",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e1d5de8dfdeb2de4",
+        "type": "mqtt in",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "",
+        "topic": "sensor/temperatur",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1a6a339d8ecf72cc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 560,
+        "wires": [
+            [
+                "b843883f2d1d15b5",
+                "274c9090f8a5f731"
+            ]
+        ]
+    },
+    {
+        "id": "734c7382d9e15f35",
+        "type": "comment",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "with debug",
+        "info": "",
+        "x": 80,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e790da812ce5b924",
+        "type": "debug",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "print noise",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "cbdeead8613a6405",
+        "type": "mqtt in",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "",
+        "topic": "sensor/noise",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1a6a339d8ecf72cc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 620,
+        "wires": [
+            [
+                "e790da812ce5b924",
+                "7299bd884902e441"
+            ]
+        ]
+    },
+    {
+        "id": "b87f245d9e1b8e91",
+        "type": "influxdb out",
+        "z": "e1a1f4d4.9f5f28",
+        "influxdb": "d30d13157620682d",
+        "name": "InfluxDB Writer",
+        "measurement": "measurement1",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "org1",
+        "bucket": "bucket1",
+        "x": 660,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "7299bd884902e441",
+        "type": "change",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.noise",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 760,
+        "wires": [
+            [
+                "b87f245d9e1b8e91"
+            ]
+        ]
+    },
+    {
+        "id": "274c9090f8a5f731",
+        "type": "change",
+        "z": "e1a1f4d4.9f5f28",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.temperature",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 700,
+        "wires": [
+            [
+                "b87f245d9e1b8e91"
+            ]
+        ]
+    },
+    {
+        "id": "62d5fb1793cc3561",
+        "type": "ADS Notification",
+        "z": "414c0314351c1c23",
+        "name": "Faulted",
+        "datasource": "3168865632d15a19",
+        "useIndex": false,
+        "varName": "GlobalVar.States.Faulted",
+        "indexGroup": "",
+        "indexOffset": "",
+        "varTyp": "BOOL",
+        "varSize": "",
+        "varLowIndex": "",
+        "varHighIndex": "",
+        "isArray": false,
+        "transmissionMode": "ONCHANGE",
+        "maxDelay": 0,
+        "cycleTime": 1000,
+        "property": "payload",
+        "topic": "",
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "6afc75e3641a2555"
+            ]
+        ]
+    },
+    {
+        "id": "6afc75e3641a2555",
+        "type": "debug",
+        "z": "414c0314351c1c23",
+        "name": "Faulted Debug",
+        "active": true,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 400,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4dd6027bf59e4ef9",
+        "type": "ADS Notification",
+        "z": "414c0314351c1c23",
+        "name": "Idle",
+        "datasource": "3168865632d15a19",
+        "useIndex": false,
+        "varName": "GlobalVar.States.Idle",
+        "indexGroup": "",
+        "indexOffset": "",
+        "varTyp": "BOOL",
+        "varSize": "",
+        "varLowIndex": "",
+        "varHighIndex": "",
+        "isArray": false,
+        "transmissionMode": "ONCHANGE",
+        "maxDelay": 0,
+        "cycleTime": 1000,
+        "property": "payload",
+        "topic": "",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "dc7b51480792cbef"
+            ]
+        ]
+    },
+    {
+        "id": "dc7b51480792cbef",
+        "type": "debug",
+        "z": "414c0314351c1c23",
+        "name": "Idle Debug",
+        "active": true,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "80389a5bb9aa3cf3",
+        "type": "ADS Notification",
+        "z": "414c0314351c1c23",
+        "name": "Producing",
+        "datasource": "3168865632d15a19",
+        "useIndex": false,
+        "varName": "GlobalVar.States.Producing",
+        "varTyp": "BOOL",
+        "transmissionMode": "ONCHANGE",
+        "maxDelay": 0,
+        "cycleTime": 1000,
+        "property": "payload",
+        "topic": "",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "00cf3389124d3b96"
+            ]
+        ]
+    },
+    {
+        "id": "00cf3389124d3b96",
+        "type": "debug",
+        "z": "414c0314351c1c23",
+        "name": "Producing Debug",
+        "active": true,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 410,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7b12f5bacd340ff8",
+        "type": "ADS Notification",
+        "z": "414c0314351c1c23",
+        "name": "Stopped",
+        "datasource": "3168865632d15a19",
+        "useIndex": false,
+        "varName": "GlobalVar.States.Stopped",
+        "indexGroup": "",
+        "indexOffset": "",
+        "varTyp": "BOOL",
+        "varSize": "",
+        "varLowIndex": "",
+        "varHighIndex": "",
+        "isArray": false,
+        "transmissionMode": "ONCHANGE",
+        "maxDelay": 0,
+        "cycleTime": 1000,
+        "property": "payload",
+        "topic": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "24b18fc59a2e69e0"
+            ]
+        ]
+    },
+    {
+        "id": "24b18fc59a2e69e0",
+        "type": "debug",
+        "z": "414c0314351c1c23",
+        "name": "Stopped Debug",
+        "active": true,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 400,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "79da5ee42c2d83d2",
+        "type": "ADS Notification",
+        "z": "414c0314351c1c23",
+        "name": "BadProducts",
+        "datasource": "3168865632d15a19",
+        "useIndex": false,
+        "varName": "GlobalVar.Counters.BadProducts",
+        "varTyp": "DINT",
+        "transmissionMode": "ONCHANGE",
+        "maxDelay": 0,
+        "cycleTime": 1000,
+        "property": "payload",
+        "topic": "",
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "c28aa56e12b85ac2"
+            ]
+        ]
+    },
+    {
+        "id": "c28aa56e12b85ac2",
+        "type": "debug",
+        "z": "414c0314351c1c23",
+        "name": "BadProducts Debug",
+        "active": true,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 420,
+        "y": 300,
+        "wires": []
+    }
+]
