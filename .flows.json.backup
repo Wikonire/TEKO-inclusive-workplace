@@ -224,7 +224,7 @@
         "usetls": false,
         "tls": "",
         "influxdbVersion": "2.0",
-        "url": "http://myInfluxDB:8086",
+        "url": "http://10.0.2.15:8086",
         "timeout": 10,
         "rejectUnauthorized": true
     },
